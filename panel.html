@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel</title>
+    <!-- CSS only-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!--fontawesome-->
+    <script src="https://kit.fontawesome.com/a92f33fcae.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-black">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="./index.html">
+            <img src="./img/LogoArgProg.png" alt="Logo Arg Prog" class="w-75">
+          </a>
+          <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+            <!-- Botón que envía al login -->
+            <a class= "ms-3 redes" href="./login.html"><i class="fa-solid fa-user fa-2x"></i></a>
+          </ul>
+        </div>
+    </nav>
+
+    <div class="row">
+      <div class="col-1">
+        <nav class="vertical" id="list-tab" role="tablist">
+          <ul>
+            <li class="vertical">
+              <a class="list-group-item list-group-item-action active" id="list-redes-list" data-bs-toggle="list" href="#list-redes" role="tab" aria-controls="list-redes">
+              <i class="fa-solid fa-share-nodes"></i></a>
+            </li>
+            <li class="vertical">
+              <a class="list-group-item list-group-item-action" id="list-banner-list" data-bs-toggle="list" href="#list-banner" role="tab" aria-controls="list-banner">
+                <i class="fa-solid fa-image"></i></a>
+            </li>
+            <li class="vertical">
+              <a class="list-group-item list-group-item-action" id="list-info-list" data-bs-toggle="list" href="#list-info" role="tab" aria-controls="list-info">
+              <i class="fa-solid fa-info"></i></a>
+            </li>
+            <li class="vertical">
+              <a class="list-group-item list-group-item-action" id="list-educacion-list" data-bs-toggle="list" href="#list-educacion" role="tab" aria-controls="list-educacion">
+              <i class="fa-solid fa-book-open"></i></a>
+            </li>
+            <li class="vertical">
+              <a class="list-group-item list-group-item-action" id="list-certificados-list" data-bs-toggle="list" href="#list-certificados" role="tab" aria-controls="list-certificados">
+              <i class="fa-solid fa-stamp"></i></a>
+            </li>
+            <li class="vertical">
+              <a class="list-group-item list-group-item-action" id="list-skills-list" data-bs-toggle="list" href="#list-skills" role="tab" aria-controls="list-skills">
+              <i class="fa-solid fa-layer-group"></i></a>
+            </li>
+            <li class="vertical">
+              <a class="list-group-item list-group-item-action" id="list-proyectos-list" data-bs-toggle="list" href="#list-proyectos" role="tab" aria-controls="list-proyectos">
+                <i class="fa-solid fa-laptop-code"></i></i></a>
+            </li>
+          </ul>
+        </nav>
+        <!--
+        <div class="list-group" id="list-tab" role="tablist">
+          <a class="list-group-item list-group-item-action active" id="list-home-list" data-bs-toggle="list" href="#list-home" role="tab" aria-controls="list-home">Home</a>
+          <a class="list-group-item list-group-item-action" id="list-profile-list" data-bs-toggle="list" href="#list-profile" role="tab" aria-controls="list-profile">Profile</a>
+          <a class="list-group-item list-group-item-action" id="list-messages-list" data-bs-toggle="list" href="#list-messages" role="tab" aria-controls="list-messages">Messages</a>
+          <a class="list-group-item list-group-item-action" id="list-settings-list" data-bs-toggle="list" href="#list-settings" role="tab" aria-controls="list-settings">Settings</a>
+        </div>
+      -->
+      </div>
+      <div class="col-11">
+        <div class="tab-content" id="nav-tabContent">
+          <div class="tab-pane fade show active" id="list-redes" role="tabpanel" aria-labelledby="list-redes-list">
+            <h4 class="tituloPanel text-center text-white">
+              Redes
+            </h4>
+            <div class="container px-5">
+              <form>
+                <div class="my-3 text-white">
+                  <label for="linkedin" class="form-label">Linkedin</label>
+                  <input type="text" class="form-control" id="linkedin">
+                </div>
+                <div class="botones">
+                  <button type="button" class="btn btn-outline-primary">Guardar</button>
+                  <button type="button" class="btn btn-outline-danger">Eliminar</button>
+                  <button type="button" class="btn btn-outline-light">Actualizar</button>
+                </div>
+                <div class="my-3 text-white">
+                  <label for="github" class="form-label">Github</label>
+                  <input type="text" class="form-control" id="github">
+                </div>
+                <div class="botones">
+                  <button type="button" class="btn btn-outline-primary">Guardar</button>
+                  <button type="button" class="btn btn-outline-danger">Eliminar</button>
+                  <button type="button" class="btn btn-outline-light">Actualizar</button>
+                </div>
+                <div class="my-3 text-white">
+                  <label for="instagram" class="form-label">Instagram</label>
+                  <input type="text" class="form-control" id="instagram">
+                </div>
+                <div class="botones">
+                  <button type="button" class="btn btn-outline-primary">Guardar</button>
+                  <button type="button" class="btn btn-outline-danger">Eliminar</button>
+                  <button type="button" class="btn btn-outline-light">Actualizar</button>
+                </div>
+                <div class="my-3 text-white">
+                  <label for="facebook" class="form-label">Facebook</label>
+                  <input type="text" class="form-control" id="facebook">
+                </div>
+                <div class="botones last">
+                  <button type="button" class="btn btn-outline-primary">Guardar</button>
+                  <button type="button" class="btn btn-outline-danger">Eliminar</button>
+                  <button type="button" class="btn btn-outline-light">Actualizar</button>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="list-banner" role="tabpanel" aria-labelledby="list-banner-list">
+            <h4 class="tituloPanel text-center text-white">
+              Banner
+            </h4>
+            <div class="container px-5">
+              <form>
+                <div class="my-3 text-white">
+                  <label for="banner" class="form-label"></label>
+                  <input class="form-control" type="file" id="banner">
+                </div>
+                <div class="botones">
+                  <button type="button" class="btn btn-outline-primary">Guardar</button>
+                  <button type="button" class="btn btn-outline-danger">Eliminar</button>
+                  <button type="button" class="btn btn-outline-light">Actualizar</button>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="list-info" role="tabpanel" aria-labelledby="list-info-list">
+            <h4 class="tituloPanel text-center text-white">
+              Acerca de mí
+            </h4>
+            <div class="container px-5">
+              <form>
+                <div class="my-3 text-white">
+                  <label for="info" class="form-label"></label>
+                  <textarea class="form-control" id="info" style="height: 100px"></textarea>
+                </div>
+                <div class="botones">
+                  <button type="button" class="btn btn-outline-primary">Guardar</button>
+                  <button type="button" class="btn btn-outline-danger">Eliminar</button>
+                  <button type="button" class="btn btn-outline-light">Actualizar</button>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="list-educacion" role="tabpanel" aria-labelledby="list-educacion-list">
+            <h4 class="tituloPanel text-center text-white">
+              Educación
+            </h4>
+            <div class="container px-5">
+              <form>
+                <div class="my-3 text-white">
+                  <label for="educacion" class="form-label"></label>
+                  <textarea class="form-control" id="educacion" style="height: 100px"></textarea>
+                </div>
+                <div class="botones">
+                  <button type="button" class="btn btn-outline-primary">Guardar</button>
+                  <button type="button" class="btn btn-outline-danger">Eliminar</button>
+                  <button type="button" class="btn btn-outline-light">Actualizar</button>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="list-certificados" role="tabpanel" aria-labelledby="list-certificados-list">
+            <h4 class="tituloPanel text-center text-white">
+              Certificados
+            </h4>
+            <div class="container px-5">
+              <form>
+                <div class="my-3 text-white">
+                  <label for="certificadoUno" class="form-label">Certificado 1</label>
+                  <input class="form-control" type="file" id="certificadoUno">
+                </div>
+                <div class="botones">
+                  <button type="button" class="btn btn-outline-primary">Guardar</button>
+                  <button type="button" class="btn btn-outline-danger">Eliminar</button>
+                  <button type="button" class="btn btn-outline-light">Actualizar</button>
+                </div>
+                <div class="my-3 text-white">
+                  <label for="certificadoDos" class="form-label">Certificado 2</label>
+                  <input class="form-control" type="file" id="certificadoDos">
+                </div>
+                <div class="botones">
+                  <button type="button" class="btn btn-outline-primary">Guardar</button>
+                  <button type="button" class="btn btn-outline-danger">Eliminar</button>
+                  <button type="button" class="btn btn-outline-light">Actualizar</button>
+                </div>
+                <div class="my-3 text-white">
+                  <label for="certificadoTres" class="form-label">Certificado 3</label>
+                  <input class="form-control" type="file" id="certificadoTres">
+                </div>
+                <div class="botones">
+                  <button type="button" class="btn btn-outline-primary">Guardar</button>
+                  <button type="button" class="btn btn-outline-danger">Eliminar</button>
+                  <button type="button" class="btn btn-outline-light">Actualizar</button>
+                </div>
+                <div class="my-3 text-white">
+                  <label for="certificadoCuatro" class="form-label">Certificado 4</label>
+                  <input class="form-control" type="file" id="certificadoCuatro">
+                </div>
+                <div class="botones">
+                  <button type="button" class="btn btn-outline-primary">Guardar</button>
+                  <button type="button" class="btn btn-outline-danger">Eliminar</button>
+                  <button type="button" class="btn btn-outline-light">Actualizar</button>
+                </div>
+                <div class="my-3 text-white">
+                  <label for="certificadoCinco" class="form-label">Certificado 5</label>
+                  <input class="form-control" type="file" id="certificadoCinco">
+                </div>
+                <div class="botones last">
+                  <button type="button" class="btn btn-outline-primary">Guardar</button>
+                  <button type="button" class="btn btn-outline-danger">Eliminar</button>
+                  <button type="button" class="btn btn-outline-light">Actualizar</button>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="list-skills" role="tabpanel" aria-labelledby="list-skills-list">
+            <h4 class="tituloPanel text-center text-white">
+              Hard and Soft Skills
+            </h4>
+            <div class="container px-5">
+              <form>
+                <div class="row">
+                  <div class="col-9 my-3 text-white text-center subtitulo">
+                    <h5>
+                      Hard Skills
+                    </h5>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-6 my-3 text-white">
+                    <label for="lenguajeUno" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="lenguajeUno">
+                  </div>
+                  <div class="col-2 my-3 text-white">
+                    <label for="porcentajeLenguajeUno" class="form-label">Porcentaje</label>
+                    <input type="text" class="form-control" id="porcentajeLenguajeUno">
+                  </div>
+                  <div class="col-4 my-5 text-white">
+                    <div class="botones">
+                      <button type="button" class="btn btn-outline-primary">Guardar</button>
+                      <button type="button" class="btn btn-outline-danger">Eliminar</button>
+                      <button type="button" class="btn btn-outline-light">Actualizar</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-6 my-3 text-white">
+                    <label for="lenguajeDos" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="lenguajeDos">
+                  </div>
+                  <div class="col-2 my-3 text-white">
+                    <label for="porcentajeLenguajeDos" class="form-label">Porcentaje</label>
+                    <input type="text" class="form-control" id="porcentajeLenguajeDos">
+                  </div>
+                  <div class="col-4 my-5 text-white">
+                    <div class="botones">
+                      <button type="button" class="btn btn-outline-primary">Guardar</button>
+                      <button type="button" class="btn btn-outline-danger">Eliminar</button>
+                      <button type="button" class="btn btn-outline-light">Actualizar</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-6 my-3 text-white">
+                    <label for="lenguajeTres" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="lenguajeTres">
+                  </div>
+                  <div class="col-2 my-3 text-white">
+                    <label for="porcentajeLenguajeTres" class="form-label">Porcentaje</label>
+                    <input type="text" class="form-control" id="porcentajeLenguajeTres">
+                  </div>
+                  <div class="col-4 my-5 text-white">
+                    <div class="botones">
+                      <button type="button" class="btn btn-outline-primary">Guardar</button>
+                      <button type="button" class="btn btn-outline-danger">Eliminar</button>
+                      <button type="button" class="btn btn-outline-light">Actualizar</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-6 my-3 text-white">
+                    <label for="lenguajeCuatro" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="lenguajeCuatro">
+                  </div>
+                  <div class="col-2 my-3 text-white">
+                    <label for="porcentajeLenguajeCuatro" class="form-label">Porcentaje</label>
+                    <input type="text" class="form-control" id="porcentajeLenguajeCuatro">
+                  </div>
+                  <div class="col-4 my-5 text-white">
+                    <div class="botones">
+                      <button type="button" class="btn btn-outline-primary">Guardar</button>
+                      <button type="button" class="btn btn-outline-danger">Eliminar</button>
+                      <button type="button" class="btn btn-outline-light">Actualizar</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-6 my-3 text-white">
+                    <label for="lenguajeCinco" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="lenguajeCinco">
+                  </div>
+                  <div class="col-2 my-3 text-white">
+                    <label for="porcentajeLenguajeCinco" class="form-label">Porcentaje</label>
+                    <input type="text" class="form-control" id="porcentajeLenguajeCinco">
+                  </div>
+                  <div class="col-4 my-5 text-white">
+                    <div class="botones">
+                      <button type="button" class="btn btn-outline-primary">Guardar</button>
+                      <button type="button" class="btn btn-outline-danger">Eliminar</button>
+                      <button type="button" class="btn btn-outline-light">Actualizar</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-6 my-3 text-white">
+                    <label for="lenguajeSeis" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="lenguajeSeis">
+                  </div>
+                  <div class="col-2 my-3 text-white">
+                    <label for="porcentajeLenguajeSeis" class="form-label">Porcentaje</label>
+                    <input type="text" class="form-control" id="porcentajeLenguajeSeis">
+                  </div>
+                  <div class="col-4 my-5 text-white">
+                    <div class="botones">
+                      <button type="button" class="btn btn-outline-primary">Guardar</button>
+                      <button type="button" class="btn btn-outline-danger">Eliminar</button>
+                      <button type="button" class="btn btn-outline-light">Actualizar</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-6 my-3 text-white">
+                    <label for="lenguajeSiete" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="lenguajeSiete">
+                  </div>
+                  <div class="col-2 my-3 text-white">
+                    <label for="porcentajeLenguajeSiete" class="form-label">Porcentaje</label>
+                    <input type="text" class="form-control" id="porcentajeLenguajeSiete">
+                  </div>
+                  <div class="col-4 my-5 text-white">
+                    <div class="botones">
+                      <button type="button" class="btn btn-outline-primary">Guardar</button>
+                      <button type="button" class="btn btn-outline-danger">Eliminar</button>
+                      <button type="button" class="btn btn-outline-light">Actualizar</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-9 my-3 text-white text-center subtitulo">
+                    <h5>
+                      Soft Skills
+                    </h5>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-6 my-3 text-white">
+                    <label for="skillUno" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="skillUno">
+                  </div>
+                  <div class="col-2 my-3 text-white">
+                    <label for="porcentajeSkillUno" class="form-label">Porcentaje</label>
+                    <input type="text" class="form-control" id="porcentajeSkillUno">
+                  </div>
+                  <div class="col-4 my-5 text-white">
+                    <div class="botones">
+                      <button type="button" class="btn btn-outline-primary">Guardar</button>
+                      <button type="button" class="btn btn-outline-danger">Eliminar</button>
+                      <button type="button" class="btn btn-outline-light">Actualizar</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-6 my-3 text-white">
+                    <label for="skillDos" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="skillDos">
+                  </div>
+                  <div class="col-2 my-3 text-white">
+                    <label for="porcentajeSkillDos" class="form-label">Porcentaje</label>
+                    <input type="text" class="form-control" id="porcentajeSkillDos">
+                  </div>
+                  <div class="col-4 my-5 text-white">
+                    <div class="botones">
+                      <button type="button" class="btn btn-outline-primary">Guardar</button>
+                      <button type="button" class="btn btn-outline-danger">Eliminar</button>
+                      <button type="button" class="btn btn-outline-light">Actualizar</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-6 my-3 text-white">
+                    <label for="skillTres" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="skillTres">
+                  </div>
+                  <div class="col-2 my-3 text-white">
+                    <label for="porcentajeSkillTres" class="form-label">Porcentaje</label>
+                    <input type="text" class="form-control" id="porcentajeSkillTres">
+                  </div>
+                  <div class="col-4 my-5 text-white">
+                    <div class="botones">
+                      <button type="button" class="btn btn-outline-primary">Guardar</button>
+                      <button type="button" class="btn btn-outline-danger">Eliminar</button>
+                      <button type="button" class="btn btn-outline-light">Actualizar</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-6 my-3 text-white">
+                    <label for="skillCuatro" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="skillCuatro">
+                  </div>
+                  <div class="col-2 my-3 text-white">
+                    <label for="porcentajeSkillCuatro" class="form-label">Porcentaje</label>
+                    <input type="text" class="form-control" id="porcentajeSkillCuatro">
+                  </div>
+                  <div class="col-4 my-5 text-white">
+                    <div class="botones">
+                      <button type="button" class="btn btn-outline-primary">Guardar</button>
+                      <button type="button" class="btn btn-outline-danger">Eliminar</button>
+                      <button type="button" class="btn btn-outline-light">Actualizar</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-6 my-3 text-white">
+                    <label for="skillCinco" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="skillCinco">
+                  </div>
+                  <div class="col-2 my-3 text-white">
+                    <label for="porcentajeSkillCinco" class="form-label">Porcentaje</label>
+                    <input type="text" class="form-control" id="porcentajeSkillCinco">
+                  </div>
+                  <div class="col-4 my-5 text-white">
+                    <div class="botones">
+                      <button type="button" class="btn btn-outline-primary">Guardar</button>
+                      <button type="button" class="btn btn-outline-danger">Eliminar</button>
+                      <button type="button" class="btn btn-outline-light">Actualizar</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-6 my-3 text-white">
+                    <label for="skillSeis" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="skillSeis">
+                  </div>
+                  <div class="col-2 my-3 text-white">
+                    <label for="porcentajeSkillSeis" class="form-label">Porcentaje</label>
+                    <input type="text" class="form-control" id="porcentajeSkillSeis">
+                  </div>
+                  <div class="col-4 my-5 text-white">
+                    <div class="botones">
+                      <button type="button" class="btn btn-outline-primary">Guardar</button>
+                      <button type="button" class="btn btn-outline-danger">Eliminar</button>
+                      <button type="button" class="btn btn-outline-light">Actualizar</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-6 my-3 text-white">
+                    <label for="skillSiete" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="skillSiete">
+                  </div>
+                  <div class="col-2 my-3 text-white">
+                    <label for="porcentajeSkillSiete" class="form-label">Porcentaje</label>
+                    <input type="text" class="form-control" id="porcentajeSkillSiete">
+                  </div>
+                  <div class="col-4 my-5 text-white">
+                    <div class="botones">
+                      <button type="button" class="btn btn-outline-primary">Guardar</button>
+                      <button type="button" class="btn btn-outline-danger">Eliminar</button>
+                      <button type="button" class="btn btn-outline-light">Actualizar</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-9 my-3 text-white text-center subtitulo">
+                    <h5>
+                      Idiomas
+                    </h5>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-6 my-3 text-white">
+                    <label for="idiomaUno" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="idiomaUno">
+                  </div>
+                  <div class="col-2 my-3 text-white">
+                    <label for="porcentajeIdiomaUno" class="form-label">Porcentaje</label>
+                    <input type="text" class="form-control" id="porcentajeIdiomaUno">
+                  </div>
+                  <div class="col-4 my-5 text-white">
+                    <div class="botones">
+                      <button type="button" class="btn btn-outline-primary">Guardar</button>
+                      <button type="button" class="btn btn-outline-danger">Eliminar</button>
+                      <button type="button" class="btn btn-outline-light">Actualizar</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-6 my-3 text-white">
+                    <label for="idiomaDos" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="idiomaDos">
+                  </div>
+                  <div class="col-2 my-3 text-white">
+                    <label for="porcentajeIdiomaDos" class="form-label">Porcentaje</label>
+                    <input type="text" class="form-control" id="porcentajeIdiomaDos">
+                  </div>
+                  <div class="col-4 my-5 text-white">
+                    <div class="botones">
+                      <button type="button" class="btn btn-outline-primary">Guardar</button>
+                      <button type="button" class="btn btn-outline-danger">Eliminar</button>
+                      <button type="button" class="btn btn-outline-light">Actualizar</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-6 my-3 text-white">
+                    <label for="idiomaTres" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="idiomaTres">
+                  </div>
+                  <div class="col-2 my-3 text-white">
+                    <label for="porcentajeIdiomaTres" class="form-label">Porcentaje</label>
+                    <input type="text" class="form-control" id="porcentajeIdiomaTres">
+                  </div>
+                  <div class="col-4 my-5 text-white">
+                    <div class="botones">
+                      <button type="button" class="btn btn-outline-primary">Guardar</button>
+                      <button type="button" class="btn btn-outline-danger">Eliminar</button>
+                      <button type="button" class="btn btn-outline-light">Actualizar</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-6 my-3 text-white">
+                    <label for="idiomaCuatro" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="idiomaCuatro">
+                  </div>
+                  <div class="col-2 my-3 text-white">
+                    <label for="porcentajeIdiomaCuatro" class="form-label">Porcentaje</label>
+                    <input type="text" class="form-control" id="porcentajeIdiomaCuatro">
+                  </div>
+                  <div class="col-4 my-5 text-white">
+                    <div class="botones">
+                      <button type="button" class="btn btn-outline-primary">Guardar</button>
+                      <button type="button" class="btn btn-outline-danger">Eliminar</button>
+                      <button type="button" class="btn btn-outline-light">Actualizar</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-6 my-3 text-white">
+                    <label for="idiomaCinco" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="idiomaCinco">
+                  </div>
+                  <div class="col-2 my-3 text-white">
+                    <label for="porcentajeIdiomaCinco" class="form-label">Porcentaje</label>
+                    <input type="text" class="form-control" id="porcentajeIdiomaCinco">
+                  </div>
+                  <div class="col-4 my-5 text-white last">
+                    <div class="botones">
+                      <button type="button" class="btn btn-outline-primary">Guardar</button>
+                      <button type="button" class="btn btn-outline-danger">Eliminar</button>
+                      <button type="button" class="btn btn-outline-light">Actualizar</button>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="list-proyectos" role="tabpanel" aria-labelledby="list-proyectos-list">
+            <h4 class="tituloPanel text-center text-white">
+              Proyectos
+            </h4>
+            <div class="container px-5">
+              <form>
+                <h5 class="text-white text-center subtitulo">
+                  Proyecto 1
+                </h5>
+                <div class="my-3 text-white">
+                  <label for="proyectoUno" class="form-label">Imagen</label>
+                  <input class="form-control" type="file" id="proyectoUno">
+                </div>
+                <div class="botones">
+                  <button type="button" class="btn btn-outline-primary">Guardar</button>
+                  <button type="button" class="btn btn-outline-danger">Eliminar</button>
+                  <button type="button" class="btn btn-outline-light">Actualizar</button>
+                </div>
+                <div class="my-3 text-white">
+                  <label for="infoProyectoUno" class="form-label">Descripción</label>
+                  <textarea class="form-control" id="infoProyectoUno" style="height: 100px"></textarea>
+                </div>
+                <div class="botones">
+                  <button type="button" class="btn btn-outline-primary">Guardar</button>
+                  <button type="button" class="btn btn-outline-danger">Eliminar</button>
+                  <button type="button" class="btn btn-outline-light">Actualizar</button>
+                </div>
+                <div class="my-3 text-white">
+                  <label for="linkProyectoUno" class="form-label">Enlace</label>
+                  <input type="text" class="form-control" id="linkProyectoUno">
+                </div>
+                <div class="botones">
+                  <button type="button" class="btn btn-outline-primary">Guardar</button>
+                  <button type="button" class="btn btn-outline-danger">Eliminar</button>
+                  <button type="button" class="btn btn-outline-light">Actualizar</button>
+                </div>
+                <h5 class="text-white text-center subtitulo">
+                  Proyecto 2
+                </h5>
+                <div class="my-3 text-white">
+                  <label for="proyectoDos" class="form-label">Imagen</label>
+                  <input class="form-control" type="file" id="proyectoDos">
+                </div>
+                <div class="botones">
+                  <button type="button" class="btn btn-outline-primary">Guardar</button>
+                  <button type="button" class="btn btn-outline-danger">Eliminar</button>
+                  <button type="button" class="btn btn-outline-light">Actualizar</button>
+                </div>
+                <div class="my-3 text-white">
+                  <label for="infoProyectoDos" class="form-label">Descripción</label>
+                  <textarea class="form-control" id="infoProyectoDos" style="height: 100px"></textarea>
+                </div>
+                <div class="botones">
+                  <button type="button" class="btn btn-outline-primary">Guardar</button>
+                  <button type="button" class="btn btn-outline-danger">Eliminar</button>
+                  <button type="button" class="btn btn-outline-light">Actualizar</button>
+                </div>
+                <div class="my-3 text-white">
+                  <label for="linkProyectoDos" class="form-label">Enlace</label>
+                  <input type="text" class="form-control" id="linkProyectoDos">
+                </div>
+                <div class="botones">
+                  <button type="button" class="btn btn-outline-primary">Guardar</button>
+                  <button type="button" class="btn btn-outline-danger">Eliminar</button>
+                  <button type="button" class="btn btn-outline-light">Actualizar</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Seccion Footer-->
+    <div class="barra barra-panel container-fluid">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+          <div class="pt-0">
+            <span class="mb-3 mb-md-0">© Copyright Tiffany Kellie Coronel - 2023</span>
+          </div>
+        </footer>
+    </div>
+
+    <!-- JavaScript Bundle with Popper-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>
